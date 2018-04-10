@@ -1141,8 +1141,3 @@ class WaveSeq(WSObj):
 class Step(WSObj):
     def __init__(self, par_names):
         self._parnam = par_names
-
-if __name__ == '__main__':
-    a = WSIO()
-    b = a.load_bank(os.getcwd() + '\\tests\\factory.syx')
-    print(b)
