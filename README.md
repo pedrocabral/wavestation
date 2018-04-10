@@ -58,7 +58,7 @@ The io object is a WSIO class instance from wstation module and holds all method
 
 #### More usage examples
 
-In the [wavestation\tests](https://github.com/pedrocabral/wavestation/tests) folder you will find along some unit tests and public preset bank samples, a file named usage.py, when executed, it loads a preset and run a series of demonstration functions, accessing every structural element of the bank and printing the results. Calls to the functions are at the end of the file and can be commented if it is the case to generate a lesser verbose output, for better reading.
+In the [wavestation\tests](https://github.com/pedrocabral/wavestation/tree/master/tests) folder you will find along some unit tests and public preset bank samples, a file named usage.py, when executed, it loads a preset and run a series of demonstration functions, accessing every structural element of the bank and printing the results. Calls to the functions are at the end of the file and can be commented if it is the case to generate a lesser verbose output, for better reading.
 
 ### <a name="bank"></a>Bank Data Structure
 The WSBank instance object holds all preset bank data as properties forming a data tree that represents the synth own internal preset structures. Every built object instance in the tree, except for WSBank (root) and Perf classes, contains a 'parameters' property, which holds a dictionary containing the actual loaded data for that specific synth block structure segment. It maps the keys as parameter names and the values as integers, most of the time containing direct values, but sometimes containing an index to a specific table of values.
